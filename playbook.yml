@@ -1,0 +1,20 @@
+- name: Deploy frontend and backend containers from GitHub
+  hosts: all
+  become: yes
+
+  vars:
+    repo_url: "https://github.com/CloudTechDevOps/2nd10WeeksofCloudOps-main.git"
+    app_path: "/root/vardhan/"
+    frontend_image: "frontend-app:latest"
+    backend_image: "backend-app:latest"
+    rds_host: "database-2.ctkk6uwww2sg.us-east-1.rds.amazonaws.com"
+    rds_user: "admin"
+    rds_password: "srivardhan"
+    rds_port: "3306"
+
+  roles:
+    - common
+    - gitclone
+    - frontend
+    - backend
+
