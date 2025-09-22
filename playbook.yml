@@ -3,13 +3,13 @@
   become: yes
 
   vars:
-    repo_url: "https://github.com/CloudTechDevOps/2nd10WeeksofCloudOps-main.git"
-    app_path: "/root/veera/"
+    repo_url: "https://github.com/vasim143/ansible-3-tier-deployment.git"
+    app_path: "/root/vaim143/"
     frontend_image: "frontend-app:latest"
     backend_image: "backend-app:latest"
-    rds_host: "database-1.cr4i2amuwzm0.us-east-1.rds.amazonaws.com"
+    rds_host: "database-1.cctysquaiubb.us-east-1.rds.amazonaws.com"
     rds_user: "admin"
-    rds_password: "Cloud123"
+    rds_password: "admin123"
     rds_port: "3306"
 
   roles:
